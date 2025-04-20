@@ -1,0 +1,19 @@
+1. create folder ..
+open terminal -
+
+flutter config --enable-web
+flutter devices
+flutter create my_pwa_app
+cd my_pwa_app
+flutter run -d chrome
+
+flutter build web
+
+go to bulid/ web manifest.json file :
+name : Flutter ecommerce PWA
+short_name : FlutterPWA
+start_url : /
+
+cd build/web
+npm install -g live-server
+live-server --port=8091
